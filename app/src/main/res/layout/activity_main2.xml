@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".Main2Activity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/regcardView"
+                android:layout_width="match_parent"
+                android:layout_height="290dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                app:cardElevation="25dp"
+                android:visibility="visible"
+                android:layout_marginTop="200dp"
+                app:cardCornerRadius="10dp"
+                android:layout_centerInParent="true">
+
+                <LinearLayout
+                    android:id="@+id/reg"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/name"
+                        android:hint="name"></EditText>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/uname"
+                        android:hint="User name"></EditText>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/email"
+                        android:hint="Email"></EditText>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pass"
+                        android:hint="password"></EditText>
+
+                    <RadioGroup
+                        android:id="@+id/redgroup"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:id="@+id/male"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="male"></RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/fmale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="female"></RadioButton>
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="250dp"
+                    android:background="@drawable/bbc"></ImageView>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/logcardView"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                app:cardElevation="25dp"
+                android:visibility="gone"
+                android:layout_marginTop="200dp"
+                app:cardCornerRadius="10dp"
+                android:layout_centerInParent="true">
+
+                <LinearLayout
+                    android:id="@+id/log"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <EditText
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lemail"
+                        android:hint="Email"></EditText>
+                    <EditText
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lpass"
+                        android:hint="password"></EditText>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:textSize="18dp"
+                        android:gravity="end"
+                        android:text="Foreget Password"></TextView>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="210dp"
+                    android:background="@drawable/bbc"></ImageView>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="User"
+                android:gravity="center"
+                android:textSize="50dp"
+                android:textColor="#000"
+                android:fontFamily="cursive"
+                android:layout_marginTop="20dp"></TextView>
+            <ImageView
+                android:id="@+id/regimg"
+                android:background="@drawable/back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/cardView"
+                android:visibility="visible"
+                android:layout_marginTop="110dp"
+                android:layout_marginBottom="100dp"
+                android:layout_marginRight="220dp"
+                />
+
+            <ImageView
+                android:id="@+id/logimg"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="210dp"
+                android:background="@drawable/s"
+                android:layout_alignTop="@+id/cardView"
+                android:visibility="gone"
+                android:layout_marginTop="110dp"
+                android:layout_marginBottom="100dp"
+                ></ImageView>
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/regg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sing Up"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="cursive"
+            android:textColor="#2C2A2A"
+            android:layout_marginTop="150dp"
+            android:textSize="30dp"></TextView>
+
+        <TextView
+            android:id="@+id/logg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:layout_marginLeft="280dp"
+            android:fontFamily="cursive"
+            android:textColor="#1C1C1C"
+            android:layout_marginTop="150dp"
+            android:textSize="30dp"></TextView>
+        <Button
+            android:id="@+id/sub"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="480dp"
+            android:layout_marginLeft="120dp"
+            android:elevation="20dp"
+            android:text="Submit"
+            android:visibility="visible"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:background="@drawable/button"
+            xmlns:app="http://schemas.android.com/apk/res-auto"/>
+
+        <Button
+            android:id="@+id/lsub"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="435dp"
+            android:layout_marginLeft="120dp"
+            android:elevation="20dp"
+            android:text="Submit"
+            android:visibility="gone"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:background="@drawable/button"
+            xmlns:app="http://schemas.android.com/apk/res-auto"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

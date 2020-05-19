@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000"
+    tools:context=".ViewAct">
+   <androidx.appcompat.widget.Toolbar
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="#000"
+       android:id="@+id/vtool">
+       <TextView
+           android:id="@+id/texttitle"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="View Wallpepar"
+           android:gravity="center"
+           android:textColor="#FFFFFF"
+           android:textSize="20dp"></TextView>
+   </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        app:layout_constraintTop_toBottomOf="@+id/vtool"
+        app:layout_constraintBottom_toTopOf="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/mg"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/sds"
+        ></ImageView>
+    <Button
+        android:id="@+id/btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btncancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="0dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#FFFFFF"
+        android:elevation="10dp"
+        android:text="set Wallpepar"
+        android:background="@drawable/button"
+        android:layout_height="40dp"></Button>
+    <Button
+        android:id="@+id/btncancel"
+        app:layout_constraintStart_toEndOf="@+id/btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Cancel"
+        android:elevation="10dp"
+        android:textColor="#000"
+        android:background="@drawable/btncancel"
+        android:layout_height="40dp"></Button>
+</androidx.constraintlayout.widget.ConstraintLayout>
